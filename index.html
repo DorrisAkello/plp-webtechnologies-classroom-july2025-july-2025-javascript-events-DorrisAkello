@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page with Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page 🎉</h1>
+  </header>
+
+  <!-- Interactive Section 1 -->
+  <section>
+    <h2>Say Hello!</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="greetingMessage"></p>
+  </section>
+
+  <!-- Interactive Section 2 -->
+  <section>
+    <h2>Toggle Extra Info</h2>
+    <button id="toggleBtn">Show More Info</button>
+    <p id="extraInfo" class="hidden">
+      This is some extra hidden text! Click the button again to hide me.
+    </p>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <span class="error" id="emailError"></span><br>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formFeedback"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
